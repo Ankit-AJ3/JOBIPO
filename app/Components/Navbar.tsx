@@ -70,7 +70,7 @@ const Navbar = () => {
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-8">
             <Link href="/" className="text-gray-700 hover:text-blue-600 text-sm font-medium">HOME</Link>
-            <Link href="/find-jobs" className="text-gray-700 hover:text-blue-600 text-sm font-medium">FIND JOBS</Link>
+            <Link href="/findJobs" className="text-gray-700 hover:text-blue-600 text-sm font-medium">FIND JOBS</Link>
             <Link href="/employers" className="text-gray-700 hover:text-blue-600 text-sm font-medium">EMPLOYERS</Link>
             <Link href="/candidates" className="text-gray-700 hover:text-blue-600 text-sm font-medium">CANDIDATES</Link>
             <Link href="/blog" className="text-gray-700 hover:text-blue-600 text-sm font-medium">BLOG</Link>
