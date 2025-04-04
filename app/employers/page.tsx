@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 
 const EmployersPage = () => {
   return (
-    <div className="container mx-auto px-4 py-8 mt-16">
+    <div className="container mx-auto px-8 sm:px-20 py-8 mt-16">
       {/* Header Section */}
       <div className="mb-8">
         <h1 className="text-3xl font-bold tracking-tight text-center">Find Employers</h1>

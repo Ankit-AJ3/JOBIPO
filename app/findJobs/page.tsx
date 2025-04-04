@@ -8,10 +8,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 
 const FindJobs = () => {
   return (
-    <div className="container mx-auto px-4 sm:px-6 py-8 mt-16">
+    <div className="container mx-auto px-8 sm:px-20 py-20 mt-8">
       {/* Search Section */}
       <div className="space-y-4 mb-8">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center">Find Your Dream Job</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6">Find Your Dream Job</h1>
         <div className="flex flex-col sm:flex-row gap-4">
           <Input 
             className="w-full" 
