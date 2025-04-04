@@ -102,7 +102,7 @@ const Navbar = () => {
           >
             HOME
           </Link>
-          <Link href="/find-jobs" 
+          <Link href="/findJobs" 
             onClick={toggleMenu} 
             className="block px-3 py-2 text-gray-700 hover:text-blue-600 text-sm font-medium hover:bg-gray-50 rounded-md"
           >
