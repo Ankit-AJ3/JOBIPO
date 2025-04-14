@@ -40,7 +40,7 @@ const Footer = () => {
             <h4 className="font-semibold">Support</h4>
             <ul className="space-y-2">
               <li><Link href="/help" className="text-sm hover:text-primary-foreground/80">Help Center</Link></li>
-              <li><Link href="/privacy" className="text-sm hover:text-primary-foreground/80">Privacy Policy</Link></li>
+              <li><Link href="/privacyPolicy" className="text-sm hover:text-primary-foreground/80">Privacy Policy</Link></li>
               <li><Link href="/terms" className="text-sm hover:text-primary-foreground/80">Terms of Service</Link></li>
               <li><Link href="/contact" className="text-sm hover:text-primary-foreground/80">Contact Us</Link></li>
             </ul>
