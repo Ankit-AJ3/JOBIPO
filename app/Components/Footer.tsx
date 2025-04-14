@@ -28,10 +28,13 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold">Quick Links</h4>
             <ul className="space-y-2">
-              <li><Link href="/about" className="text-sm hover:text-primary-foreground/80">About Us</Link></li>
-              <li><Link href="/findjobs" className="text-sm hover:text-primary-foreground/80">Find Jobs</Link></li>
+              <li><Link href="/aboutus" className="text-sm hover:text-primary-foreground/80">About Us</Link></li>
+              <li><Link href="/findJobs" className="text-sm hover:text-primary-foreground/80">Find Jobs</Link></li>
               <li><Link href="/candidates" className="text-sm hover:text-primary-foreground/80">Candidates</Link></li>
               <li><Link href="/employers" className="text-sm hover:text-primary-foreground/80">Employers</Link></li>
+              <li><Link href="/career" className="text-sm hover:text-primary-foreground/80">Career</Link></li>
+              <li><Link href="/gallery" className="text-sm hover:text-primary-foreground/80">Our Gallery</Link></li>
+              <li><Link href="/news" className="text-sm hover:text-primary-foreground/80">News & Blog</Link></li>
             </ul>
           </div>
 
@@ -41,7 +44,9 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link href="/help" className="text-sm hover:text-primary-foreground/80">Help Center</Link></li>
               <li><Link href="/privacyPolicy" className="text-sm hover:text-primary-foreground/80">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="text-sm hover:text-primary-foreground/80">Terms of Service</Link></li>
+              <li><Link href="/termServices" className="text-sm hover:text-primary-foreground/80">Terms of Service</Link></li>
+              <li><Link href="/refundPolicy" className="text-sm hover:text-primary-foreground/80">Refund Policy</Link></li>
+              <li><Link href="/faq" className="text-sm hover:text-primary-foreground/80">FAQ</Link></li>
               <li><Link href="/contact" className="text-sm hover:text-primary-foreground/80">Contact Us</Link></li>
             </ul>
           </div>

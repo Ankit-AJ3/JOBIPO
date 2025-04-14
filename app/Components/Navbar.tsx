@@ -70,9 +70,40 @@ const Navbar = () => {
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-8">
             <Link href="/" className="text-gray-700 hover:text-blue-600 text-sm font-medium">HOME</Link>
-            <Link href="/findJobs" className="text-gray-700 hover:text-blue-600 text-sm font-medium">FIND JOBS</Link>
+            <div className="relative group">
+              <button className="text-gray-700 hover:text-blue-600 text-sm font-medium focus:outline-none">
+              FIND JOBS
+              </button>
+              <div className="absolute left-0 hidden mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg group-hover:block">
+              <Link href="/findJobs/freshersjob" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">
+                Freshers Jobs
+                </Link>
+              <Link href="/findJobs/internships" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">
+                Internships
+              </Link>
+              <Link href="/findJobs/fullTime" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">
+                Full-Time Jobs
+              </Link>
+              <Link href="/findJobs/partTime" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">
+                Part-Time Jobs
+              </Link>
+                <Link href="/findJobs/workFromHome" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">
+                Work From Home
+                </Link>
+                <Link href="/findJobs/nightShifts" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">
+                Night Shifts Jobs
+                </Link>
+                <Link href="/findJobs/jobsForWomen" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">
+                Jobs For Woman
+                </Link>
+                <Link href="/findJobs/localJobs" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">
+                Local Jobs
+                </Link>
+              </div>
+            </div>
             <Link href="/employers" className="text-gray-700 hover:text-blue-600 text-sm font-medium">EMPLOYERS</Link>
-            <Link href="/candidates" className="text-gray-700 hover:text-blue-600 text-sm font-medium">CANDIDATES</Link>
+            {/* <Link href="/candidates" className="text-gray-700 hover:text-blue-600 text-sm font-medium">CANDIDATES</Link> */}
+            <Link href="/affilate" className="text-gray-700 hover:text-blue-600 text-sm font-medium">AFFILATE</Link>
             <Link href="/blog" className="text-gray-700 hover:text-blue-600 text-sm font-medium">BLOG</Link>
             <Link href="/contact" className="text-gray-700 hover:text-blue-600 text-sm font-medium">CONTACT</Link>
           </div>
@@ -114,11 +145,17 @@ const Navbar = () => {
           >
             EMPLOYERS
           </Link>
-          <Link href="/candidates" 
+          {/* <Link href="/candidates" 
             onClick={toggleMenu} 
             className="block px-3 py-2 text-gray-700 hover:text-blue-600 text-sm font-medium hover:bg-gray-50 rounded-md"
           >
             CANDIDATES
+          </Link> */}
+          <Link href="/affilate" 
+            onClick={toggleMenu} 
+            className="block px-3 py-2 text-gray-700 hover:text-blue-600 text-sm font-medium hover:bg-gray-50 rounded-md"
+          >
+            AFFILATE
           </Link>
           <Link href="/blog" 
             onClick={toggleMenu} 
