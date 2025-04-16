@@ -1,116 +1,169 @@
-import React from 'react';
+import React from "react";
 
 const PrivacyPolicyPage = () => {
   return (
     <div className="bg-gray-100 min-h-screen py-10 mt-12">
       <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-lg p-8">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4 text-center">Privacy Policy for Jobipo</h1>
+        <h1 className="text-3xl font-bold text-gray-800 mb-4 text-center">
+          Terms and Conditions for Jobipo
+        </h1>
         <p className="text-sm text-gray-500 mb-6">Effective Date: 14/04/2025</p>
         <p className="text-gray-700 mb-4">
-          Jobipo is a commercial app by Adshrtech Media Private Limited (“Jobipo”). This page informs visitors about our
-          policies regarding the collection, use, and disclosure of personal information for anyone using the Jobipo app
-          and website (“Jobipo Platform”). By accessing or using the Jobipo Platform, you agree to the terms of this
-          Privacy Policy and our Terms of Service.
+          Welcome to <b>Jobipo</b>, a comprehensive job and affiliate
+          opportunity platform owned and operated by{" "}
+          <b>Adshrtech Media Private Limited</b> (&quot;Jobipo&quot;,
+          &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;). These{" "}
+          <b>Terms and Conditions</b> (&quot;Terms&quot;) govern your use of our
+          website and mobile application (collectively referred to as the
+          &quot;Jobipo Platform&quot;). By using the Jobipo Platform, you agree
+          to these Terms and our Privacy Policy. If you do not accept these
+          Terms, please refrain from using the Platform.
         </p>
-        <p className="text-gray-700 mb-6">
-          We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your
-          information.
+        <h2 className="text-bold">1. Eligibility </h2>
+        <p>
+          {" "}
+          You may use the Jobipo Platform only if you meet the following
+          eligibility criteria:
         </p>
-
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">1. Information We Collect</h2>
-        <h3 className="text-xl font-medium text-gray-800 mb-2">a. Personal Identification Information</h3>
-        <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-          <li>Your full name, email address, mobile number, and date of birth help us create and verify your account.</li>
-          <li>Gender is collected to personalize job listings or for employer requirements where applicable.</li>
-          <li>Profile photo may be used to create a professional identity on your profile.</li>
-          <li>
-            We also collect your PAN card details to comply with income tax regulations in India, and your bank account
-            details for processing affiliate payouts securely.
-          </li>
-        </ul>
-
-        <h3 className="text-xl font-medium text-gray-800 mb-2">b. Professional and Job-Related Information</h3>
-        <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-          <li>
-            We collect your resume/CV, education background, work experience, skills, job preferences, and languages
-            known so that we can match you with suitable job opportunities.
-          </li>
-          <li>This information may be shared with potential employers and recruiters who use Jobipo for hiring.</li>
-        </ul>
-
-        <h3 className="text-xl font-medium text-gray-800 mb-2">c. Usage and Technical Information</h3>
-        <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-          <li>
-            We automatically collect data such as your IP address, browser type, device information, operating system,
-            and location data (if permission is granted) to optimize your experience on the platform.
-          </li>
-          <li>
-            We also gather usage behavior, such as pages visited, time spent on each page, buttons clicked, etc., to
-            improve app and website performance.
-          </li>
-        </ul>
-
-        <h3 className="text-xl font-medium text-gray-800 mb-2">d. Contacts Access (Optional)</h3>
-        <p className="text-gray-700 mb-6">
-          If you choose to grant us permission, we may access your phone contacts to assist with referrals, affiliate
-          marketing, or networking within the platform. This is completely optional and requires your explicit consent.
-        </p>
-
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">2. How We Use Your Information</h2>
-        <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-          <li>To create, manage, and secure your Jobipo account</li>
-          <li>To recommend jobs that match your profile and connect you with verified employers</li>
-          <li>To process affiliate payouts, manage TDS deductions, and send relevant financial notifications</li>
-          <li>To send alerts, notifications, emails, or SMS regarding new job openings or important updates</li>
-          <li>To improve platform functionality, customize content, and enhance user experience</li>
-          <li>To ensure platform security, detect suspicious activity, and prevent fraud</li>
-          <li>To comply with legal obligations and regulatory requirements</li>
-        </ul>
-
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">3. Sharing of Information</h2>
-        <p className="text-gray-700 mb-6">
-          We do not sell your personal data to third parties. However, your information may be shared with:
-        </p>
-        <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-          <li>Verified employers and recruiters looking to hire candidates matching your profile</li>
-          <li>
-            Financial institutions and payment gateways for processing affiliate earnings and verifying bank account
-            details
-          </li>
-          <li>Tax authorities, in case of legal obligation to report income and TDS deductions</li>
-          <li>
-            Third-party service providers, such as cloud storage providers, communication tools, or analytics services
-            that help us run the platform efficiently
-          </li>
-          <li>Law enforcement agencies, if required by court order or applicable law</li>
-        </ul>
-
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">4. Data Retention</h2>
-        <p className="text-gray-700 mb-6">
-          We retain your data for as long as your account remains active, as necessary to comply with legal, tax, and
-          regulatory requirements, and to resolve disputes and enforce our agreements. If you wish to delete your account
-          or personal information, you can do so by emailing us at support@jobipo.com.
-        </p>
-
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">5. Your Rights</h2>
-        <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-          <li>Access and update your profile information through the app or website</li>
-          <li>Request deletion of your account and associated personal data</li>
-          <li>Withdraw consent for permissions such as location or contacts access</li>
-          <li>Request information on your affiliate payments or TDS deductions</li>
-        </ul>
-
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">6. Contact Us</h2>
-        <p className="text-gray-700">
-          For any questions, complaints, or feedback related to privacy or data protection, please contact us:
-        </p>
-        <ul className="list-disc pl-6 text-gray-700 space-y-2">
-          <li>Email: support@jobipo.com</li>
-          <li>Website: www.jobipo.in</li>
-          <li>
-            Address: Shop 17, 18 Ganesh Nagar, Benar Road Nadi Ka Phatak, Neendar, Jaipur, Jaipur-302013 Rajasthan
-          </li>
-        </ul>
+        - You are at least 18 years of age. - You have the legal capacity to
+        enter into a binding contract. - You agree to provide truthful,
+        accurate, and up-to-date information. - You have not been previously
+        barred from using similar platforms under applicable laws. We reserve
+        the right to refuse service or suspend accounts at our sole discretion
+        if eligibility requirements are not met.
+        <h2>2. Scope of Services </h2>
+        Jobipo offers a wide range of services to its users: -{" "}
+        <b>Job Seekers:</b> Explore, search, and apply to relevant job
+        opportunities posted by verified employers and recruitment partners. -{" "}
+        <b>Employers/Recruiters:</b> Post jobs, access candidate profiles, and
+        connect with potential hires through our streamlined interface. -{" "}
+        <b> Affiliates:</b> Refer job seekers, employers, or campaign leads and
+        earn commission as per active campaign guidelines. -{" "}
+        <b>Skill Profiling & Job Matching:</b> Create rich profiles detailing
+        educational background, skill sets, languages known, preferences, and
+        job history. Our system uses this information to recommend better job
+        matches. We are constantly improving and expanding our services. Jobipo
+        reserves the right to introduce, modify, or remove any features or
+        services without prior notice.
+        <h2 className="text-bold">3. User Account Responsibilities </h2>
+        Users must ensure their accounts are secure. You agree to: - Keep your
+        login credentials confidential. - Regularly update your profile details.
+        - Notify us immediately in case of unauthorized access or suspicious
+        activity. You are responsible for all activities conducted through your
+        account. Jobipo shall not be held liable for losses arising from
+        unauthorized account use.
+        <br />
+        <h2> 4. Use of Platform </h2>
+        The Jobipo Platform is intended for lawful use only. Prohibited actions
+        include: - Providing false, misleading, or incomplete information. -
+        Uploading offensive, abusive, or discriminatory content. - Using bots,
+        crawlers, or malicious scripts to interfere with the platform. -
+        Engaging in scams, impersonation, or fraudulent acts. Jobipo may suspend
+        or terminate any account involved in such violations without prior
+        notice and may initiate legal proceedings if required.
+        <br />
+        <h2>5. Job Listings and Applications </h2>
+        Jobipo provides access to a variety of job listings. However: - We do
+        not guarantee the authenticity or outcome of any job posted. - We do not
+        interfere in hiring decisions, salary discussions, or company policies.
+        - We do not guarantee interview calls or job offers to users. Users are
+        advised to conduct independent verification and proceed with caution
+        before committing to job offers or sharing personal documents.
+        <br />
+        <h2> 6. Employer and Recruiter Responsibilities </h2>
+        Employers and recruiters using Jobipo must: - Provide detailed and
+        truthful job postings. - Not charge any amount to job seekers for job
+        applications or interviews. - Respond respectfully and ethically to job
+        applications. - Follow all labor and employment laws applicable to their
+        region. Failure to comply may result in listing removal and permanent
+        suspension of access to the platform.
+        <br />
+        <h2> 7. Affiliate Program </h2>
+        Jobipo runs a transparent affiliate system to allow users to earn
+        through referrals in multiple sectors including: - Finance - Education -
+        E-commerce - Automobile - Others To participate: - You must complete KYC
+        with valid PAN and bank account details. - You must agree to
+        campaign-specific terms, including payout structure, timelines, and
+        documentation. - You must not engage in fake registrations,
+        impersonation, or misleading promotions. We reserve the right to perform
+        audits and deny payments if any policy breach or fraudulent activity is
+        discovered.
+        <br />
+        <h2>8. Payments, Bank & Tax Information </h2>
+        To ensure transparency and compliance: - All earnings are paid directly
+        to the registered user’s verified bank account. - PAN card submission is
+        mandatory for TDS deduction and legal compliance. - Payouts are
+        processed post-verification and upon campaign completion. - Jobipo will
+        not be responsible for delays due to incorrect banking details,
+        documentation issues, or failed KYC.
+        <br />
+        <h2> 9. Profile Information and Data Usage </h2>
+        Users provide various details to enhance platform experience: - Personal
+        details (name, contact info, gender) - Job preferences, skills,
+        qualifications, and work history - PAN card and banking details for
+        affiliates All data is stored securely and processed as per our Privacy
+        Policy. Jobipo uses this data solely for matching users to
+        opportunities, enhancing services, and ensuring smooth financial
+        transactions.
+        <br />
+        <h2>10. Trust and Safety</h2>
+        Jobipo aims to build a trustworthy ecosystem. However, we cannot
+        guarantee the actions of third parties. Users are encouraged to: -
+        Always verify the identity of employers or agents before attending
+        interviews. - Refrain from making any payments or sharing sensitive
+        information like OTPs or passwords. - Report fraud, misconduct, or
+        suspicious activity immediately via support@jobipo.com. We take user
+        reports seriously and will take appropriate action, including suspension
+        and legal escalation if necessary.
+        <br />
+        <h2> 11. Cookies and Tracking </h2>
+        We utilize cookies and other tracking technologies to improve your
+        experience, analyze performance, and remember preferences. By using
+        Jobipo, you consent to our use of these tools as detailed in our Privacy
+        Policy.
+        <br />
+        <h2>12. Intellectual Property Rights </h2>
+        All content including brand assets, text, images, software, and designs
+        on the Jobipo Platform is the sole property of Adshrtech Media Private
+        Limited or its licensors. Any unauthorized use, duplication, or
+        distribution is strictly prohibited and may invite legal consequences.
+        <br />
+        <h2> 13. Termination of Service</h2>
+        Jobipo reserves the right to suspend or terminate user access with or
+        without notice under circumstances such as: - Violation of these Terms -
+        Fraudulent or harmful activity - Failure to adhere to campaign or
+        affiliate guidelines Any balance or pending payout post-termination
+        shall be reviewed for compliance before release.
+        <br />
+        <h2>14. Limitation of Liability </h2>
+        Jobipo shall not be liable for: - Any indirect, incidental, or
+        consequential damages - Job loss, missed opportunities, or lost income -
+        User negligence, scams, or third-party interactions All users access and
+        use the platform at their own risk.
+        <br />
+        <h2>15. Disclaimer </h2>
+        Jobipo is not responsible for any loss, fraud, scam, or unlawful
+        activity that occurs between users.** All users are urged to exercise
+        due diligence, verify information independently, and report any abuse
+        promptly.
+        <br />
+        <h2>16. Changes to Terms </h2>
+        We may update or revise these Terms from time to time. Any such changes
+        will be effective immediately upon posting on our platform. Continued
+        usage of Jobipo after such updates constitutes acceptance of the revised
+        Terms.
+        <br />
+        <h2>17. Governing Law and Jurisdiction </h2>
+        These Terms shall be governed under the laws of **India**. Any disputes
+        arising from these Terms shall fall under the exclusive jurisdiction of
+        courts located in Jaipur.
+        <p />
+        <p></p>
+        <h2>18. Contact Information </h2>
+        For any queries or support: Email: support@jobipo.com Website:
+        www.jobipo.com Company: Adshrtech Media Private Limited Address: Shop
+        17,18 Ganesh Nagar,Benar Road Nadi Ka Phatak, Neendar,Jaipur ,Jaipur-
+        302013 Rajasthan
       </div>
     </div>
   );
