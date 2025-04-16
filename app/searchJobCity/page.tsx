@@ -1,3 +1,4 @@
+"use client";
 // components/JobExplorer.tsx
 import React from 'react';
 
