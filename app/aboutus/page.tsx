@@ -9,7 +9,7 @@ const AboutPage = () => {
         <p className="text-sm md:text-base text-gray-600 leading-relaxed">
           Welcome to <strong>Jobipo</strong>, a modern job discovery and earning platform brought to you by <strong>Adshrtech Media Private Limited</strong>. At Jobipo, we’re on a mission to make employment more accessible, reliable, and rewarding for millions of job seekers and businesses across India.
           <br /><br />
-          In a world full of uncertainty, we aim to be the bridge that connects talent with opportunity — across sectors, cities, and skill levels. Whether you're looking for your first job, a better one, or a way to earn through referrals, Jobipo is designed to support your journey.
+          In a world full of uncertainty, we aim to be the bridge that connects talent with opportunity — across sectors, cities, and skill levels. Whether you&apos;re looking for your first job, a better one, or a way to earn through referrals, Jobipo is designed to support your journey.
         </p>
       </div>
     </main>
