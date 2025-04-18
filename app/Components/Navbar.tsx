@@ -31,19 +31,22 @@ const Navbar = () => {
     <nav className={`bg-white w-full fixed top-0 z-50 transition-all duration-300 ${isScrolled ? 'shadow-lg' : 'shadow-md'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link href="/">
-              <Image
-                src="/logos/logo.png"
-                alt="Jobipo Logo"
-                width={100}
-                height={35}
-                className="cursor-pointer w-auto h-auto"
-                priority
-              />
-            </Link>
-          </div>
+
+          {/* Logo + Brand */}
+          <Link href="/" className="flex items-center space-x-2">
+            <Image
+              src="/logos/logo.png"
+              alt="Jobipo Logo"
+              width={100}
+              height={100}
+              className="w-24 h-24 object-contain"
+              priority
+            />
+            <div className="flex flex-col justify-center leading-none">
+              <span className="text-base font-bold text-blue-900">Jobipo</span>
+              <span className="text-[10px] text-gray-500 tracking-tight">Powered by Adshrtech Media Private Limited.</span>
+            </div>
+          </Link>
 
           {/* Hamburger Menu Button */}
           <div className="md:hidden">
@@ -68,8 +71,6 @@ const Navbar = () => {
             <div className="relative group">
               <button
                 className="text-gray-700 hover:text-blue-600 text-sm font-medium focus:outline-none"
-                tabIndex={0}
-                onKeyDown={(e) => e.key === 'Enter' && e.preventDefault()}
               >
                 FIND JOBS
               </button>
