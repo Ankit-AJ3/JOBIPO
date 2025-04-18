@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
@@ -8,6 +8,8 @@ import { usePathname } from 'next/navigation'
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const dropdownRef = useRef<HTMLDivElement | null>(null)
   const pathname = usePathname()
 
   useEffect(() => {
@@ -18,21 +20,27 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsDropdownOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   const navLinkStyle = (href: string) =>
-    `text-sm font-medium ${
-      pathname === href ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'
-    }`
+    `text-sm font-medium ${pathname === href ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}`
 
   return (
     <nav className={`bg-white w-full fixed top-0 z-50 transition-all duration-300 ${isScrolled ? 'shadow-lg' : 'shadow-md'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
 
-          {/* Logo + Brand */}
+          {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/logos/logo.png"
@@ -48,7 +56,7 @@ const Navbar = () => {
             </div>
           </Link>
 
-          {/* Hamburger Menu Button */}
+          {/* Hamburger Menu */}
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
@@ -68,23 +76,29 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-8">
             <Link href="/" className={navLinkStyle('/')}>HOME</Link>
-            <div className="relative group">
+
+            {/* Dropdown Menu */}
+            <div className="relative" ref={dropdownRef}>
               <button
+                onClick={() => setIsDropdownOpen(prev => !prev)}
                 className="text-gray-700 hover:text-blue-600 text-sm font-medium focus:outline-none"
               >
                 FIND JOBS
               </button>
-              <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <Link href="/findJobs/freshersjob" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">Freshers Jobs</Link>
-                <Link href="/findJobs/internships" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">Internships</Link>
-                <Link href="/findJobs/fullTime" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">Full-Time Jobs</Link>
-                <Link href="/findJobs/partTime" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">Part-Time Jobs</Link>
-                <Link href="/findJobs/workFromHome" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">Work From Home</Link>
-                <Link href="/findJobs/nightShifts" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">Night Shifts Jobs</Link>
-                <Link href="/findJobs/jobsForWomen" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">Jobs for Women</Link>
-                <Link href="/findJobs/localJobs" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">Local Jobs</Link>
-              </div>
+              {isDropdownOpen && (
+                <div className="absolute left-0 mt-2 w-56 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+                  <Link href="/findJobs/freshersjob" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Freshers Jobs</Link>
+                  <Link href="/findJobs/internships" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Internships</Link>
+                  <Link href="/findJobs/fullTime" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Full-Time Jobs</Link>
+                  <Link href="/findJobs/partTime" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Part-Time Jobs</Link>
+                  <Link href="/findJobs/workFromHome" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Work From Home</Link>
+                  <Link href="/findJobs/nightShifts" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Night Shifts Jobs</Link>
+                  <Link href="/findJobs/jobsForWomen" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Jobs for Women</Link>
+                  <Link href="/findJobs/localJobs" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Local Jobs</Link>
+                </div>
+              )}
             </div>
+
             <Link href="/employers" className={navLinkStyle('/employers')}>EMPLOYERS</Link>
             <Link href="/affilate" className={navLinkStyle('/affilate')}>AFFILIATE</Link>
             <Link href="/blog" className={navLinkStyle('/blog')}>BLOG</Link>
