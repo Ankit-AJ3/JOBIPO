@@ -73,7 +73,7 @@ const Navbar = () => {
               >
                 FIND JOBS
               </button>
-              <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <Link href="/findJobs/freshersjob" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">Freshers Jobs</Link>
                 <Link href="/findJobs/internships" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">Internships</Link>
                 <Link href="/findJobs/fullTime" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 text-sm">Full-Time Jobs</Link>
