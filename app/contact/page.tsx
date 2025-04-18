@@ -93,15 +93,17 @@ const ContactPage = () => {
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
         <div className="text-center">
           <h3 className="font-semibold mb-2">Email</h3>
-          <p className="text-muted-foreground">support@example.com</p>
+          <p className="text-muted-foreground">support@jobipo.com</p>
         </div>
         <div className="text-center">
           <h3 className="font-semibold mb-2">Phone</h3>
-          <p className="text-muted-foreground">+1 (555) 123-4567</p>
+          <p className="text-muted-foreground">9799989693</p>
         </div>
         <div className="text-center">
           <h3 className="font-semibold mb-2">Address</h3>
-          <p className="text-muted-foreground">123 Business Street, Suite 100</p>
+          <p className="text-muted-foreground">
+            Shop 17, 18, Ganesh Nagar, Benar Road, Nadi Ka Phatak, Neendar, Jaipur – 302013, Rajasthan
+          </p>
         </div>
       </div>
     </div>

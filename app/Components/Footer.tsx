@@ -17,8 +17,11 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="space-y-4">
+          <div className="space-y-1">
             <h3 className="font-semibold text-lg">JOBIPO</h3>
+            <div className="flex flex-col justify-center leading-none mb-6">
+              <span className="text-[12px] text-white tracking-tight">Powered by Adshrtech Media Private Limited.</span>
+            </div>
             <p className="text-sm text-primary-foreground/80">
               Connecting talents with opportunities, simplifying recruitment processes.
             </p>
