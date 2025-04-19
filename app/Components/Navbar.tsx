@@ -100,7 +100,7 @@ const Navbar = () => {
             </div>
 
             <Link href="/employers" className={navLinkStyle('/employers')}>EMPLOYERS</Link>
-            <Link href="/affilate" className={navLinkStyle('/affilate')}>AFFILIATE</Link>
+            <Link href="/affiliate" className={navLinkStyle('/affiliate')}>AFFILIATE</Link>
             <Link href="/blog" className={navLinkStyle('/blog')}>BLOG</Link>
             <Link href="/contact" className={navLinkStyle('/contact')}>CONTACT</Link>
           </div>
