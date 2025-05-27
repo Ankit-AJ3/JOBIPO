@@ -116,7 +116,8 @@ const Navbar = () => {
                 JOB SEEKER
               </button>
             </Link>
-            <Link href="/employer/create-account">
+            <Link href="https://jobipo.com/employer/create-account"
+             target="_blank">
               <button className="bg-orange-400 text-white px-3 py-2 text-sm font-medium rounded-r-full hover:bg-orange-600 transition duration-300">
                 POST A JOB
               </button>
