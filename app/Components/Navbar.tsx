@@ -107,12 +107,16 @@ const Navbar = () => {
 
           {/* Desktop Buttons */}
           <div className="hidden md:flex md:items-center md:space-x-1">
+            <Link href="jobipo.com/Agent/Login"
             <button className="bg-blue-900 text-white px-3 py-2 text-sm font-medium rounded-l-full hover:bg-blue-700 transition duration-300">
               JOB SEEKER
             </button>
+            </Link>
+          <Link href="jobipo.com/employer/create-account"
             <button className="bg-orange-400 text-white px-3 py-2 text-sm font-medium rounded-r-full hover:bg-orange-600 transition duration-300">
               POST A JOB
             </button>
+           </Link>
           </div>
         </div>
       </div>
